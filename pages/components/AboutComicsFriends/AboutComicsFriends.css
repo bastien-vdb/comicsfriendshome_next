@@ -1,0 +1,41 @@
+/* #blocAbout {
+    display: flex;
+    padding: 6em;
+    flex-wrap: wrap;
+} */
+
+/* #blocAbout>div:nth-child(1) {
+    width: 700px;
+}
+
+#blocAbout>div:nth-child(2) {
+    width: 700px;
+}
+
+#blocAbout_textBloc>div {
+    background: #1B0F2C;
+    border-radius: 20px;
+    padding: 3em;
+    width: 673px;
+} */
+
+#blocAbout_textBloc>div>h1 {
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 88px;
+    line-height: 90px;
+    /* or 102% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.06em;
+
+    color: #FFFFFF;
+    margin: 0.1em;
+}
+
+#blocAbout_textBloc>div>p {
+    font-size:18px;
+}

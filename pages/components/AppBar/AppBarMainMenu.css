@@ -1,0 +1,20 @@
+
+#AppBarMainMenu {
+    /* background-image: url('../../public/homepic.png'); */
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0)), url('../../../public/homepic.png');
+    background-size:cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+#buttonMenu {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#sepLine {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    margin: 1em 0;
+    height: 0;
+}
