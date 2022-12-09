@@ -7,12 +7,13 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import AboutComicsFriends from './components/AboutComicsFriends/AboutComicsFriends';
+import Goals from './components/Goals/Goals';
 
 export default function Home() {
   return (
     <div>
       <AppBarMainMenu/>
-      <AboutComicsFriends/>
+      <Goals/>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar } from 'flowbite-react';
+import Link from 'next/link';
 
 function AppBarMainMenu(props) {
     return (
@@ -16,9 +17,11 @@ function AppBarMainMenu(props) {
             <Navbar.Toggle />
 
             <Navbar.Collapse className='md:mr-40 w-64'>
-                <Navbar.Link href="/navbars" active={true}>
+                <Link href="/components/AboutComicsFriends/AboutComicsFriends">
+                
                     <span id='buttonMenu' className='text-white p-2 px-8 border rounded-full'>About</span>
-                </Navbar.Link>
+                
+                </Link>
 
                 <Navbar.Link href="/navbars">
                     <span id='buttonMenu' className='text-white p-2 px-8 border rounded-full'>Goals</span>
