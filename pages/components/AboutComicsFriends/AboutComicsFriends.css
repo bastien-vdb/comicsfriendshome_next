@@ -1,24 +1,3 @@
-/* #blocAbout {
-    display: flex;
-    padding: 6em;
-    flex-wrap: wrap;
-} */
-
-/* #blocAbout>div:nth-child(1) {
-    width: 700px;
-}
-
-#blocAbout>div:nth-child(2) {
-    width: 700px;
-}
-
-#blocAbout_textBloc>div {
-    background: #1B0F2C;
-    border-radius: 20px;
-    padding: 3em;
-    width: 673px;
-} */
-
 #blocAbout_textBloc>div>h1 {
 
     font-family: 'Space Grotesk';
@@ -46,12 +25,4 @@
 
 .Stripes_pic {
     margin-top: 90%;
-}
-
-.bg-about {
-    background-image: url('/Stripes_pic.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: inset 0 0 0 2000px rgba(12, 5, 26, 0.75);
 }
