@@ -10,15 +10,15 @@ const NavigationBar = () => {
         { name: 'About', link: '/components/AboutComicsFriends/AboutComicsFriends' },
         { name: 'Goals', link: '/components/Goals/Goals' },
         { name: 'Genesis', link: '/components/Genesis/Genesis' },
-        { name: 'Partnership', link: '/' },
-        { name: 'Team', link: '/' },
-        { name: 'Authenticate', link: '/' }
+        { name: 'Partnership', link: '#anchor_Partnership' },
+        { name: 'Team', link: '#anchor_Team' },
+        { name: 'Authenticate', link: '#anchor_Authenticate' }
     ];
 
     return (
         <nav>
             <div className='deskTopMenu flex justify-between items-center m-2'>
-                <Image alt='logo.png' src='/logo.png' className='m-2' height={500} width={100} />
+                <Image alt='logo.png' src='/logo.png' className='m-2' height={500} width={200} />
                 <ul className='flex gap-4 mr-20'>
                     {pages.map((e, key) => (
                         <DeskTopButton key={key} pages={e} />
@@ -27,7 +27,7 @@ const NavigationBar = () => {
             </div>
             <div className='mobileMenu hidden'>
                 <div className='flex justify-between'>
-                    <Image alt='logo.png' src='/logo.png' className='m-2 h-10' height={500} width={80} />
+                    <Image alt='logo.png' src='/logo.png' className='m-2' height={500} width={100} />
                     <button onClick={() => setMenuOpen(true)} className='m-2'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -44,7 +44,7 @@ const NavigationBar = () => {
                     </button>
                     <ul className='mt-10 flex flex-col'>
                         {pages.map((e, key) => (
-                            <MobileButton key={key} pages={e} />
+                            <MobileButton key={key} pages={e} setMenuOpen={setMenuOpen} />
                         ))}
                     </ul>
                 </div>
@@ -63,11 +63,11 @@ const DeskTopButton = ({ pages }) => {
     )
 }
 
-const MobileButton = ({ pages }) => {
+const MobileButton = ({ pages, setMenuOpen }) => {
     return (
         <>
             <li className='h-14 border-b hover:bg-slate-900 flex justify-center items-center'>
-                <Link href={pages.link}>{pages.name}</Link>
+                <Link onClick={() => setMenuOpen(false)} href={pages.link}>{pages.name}</Link>
             </li>
         </>
     )
