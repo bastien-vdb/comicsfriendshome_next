@@ -10,9 +10,9 @@ const NavigationBar = () => {
         { name: 'About', link: '/components/AboutComicsFriends/AboutComicsFriends' },
         { name: 'Goals', link: '/components/Goals/Goals' },
         { name: 'Genesis', link: '/components/Genesis/Genesis' },
-        { name: 'Partnership', link: '#anchor_Partnership' },
-        { name: 'Team', link: '#anchor_Team' },
-        { name: 'Authenticate', link: '#anchor_Authenticate' }
+        { name: 'Partnership', link: '/#anchor_Partnership' },
+        { name: 'Team', link: '/#anchor_Team' },
+        { name: 'Authenticate', link: '/#anchor_Authenticate' }
     ];
 
     return (
@@ -56,8 +56,10 @@ const NavigationBar = () => {
 const DeskTopButton = ({ pages }) => {
     return (
         <>
-            <li className='desktopButton border-2 rounded-full px-8 py-1'>
-                <Link href={pages.link}>{pages.name}</Link>
+            <li className='desktopButton group relative border-2 rounded-full px-8 py-1 shadow-4xl shadow-lg shadow-[#9850b3] cursor-pointer'>
+                <Link href={pages.link}>{pages.name}
+                    <div className="absolute inset-0 w-0 rounded-full opacity-70 bg-[#fafafa] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                </Link>
             </li>
         </>
     )

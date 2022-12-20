@@ -6,7 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Space Grotesk', sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   max-width: 2080px;
@@ -38,6 +38,10 @@ body {
   background-image: url('../public/mainBackground.png');
   color: white;
 
+}
+
+p {
+  color: rgba(229, 217, 255, 1);
 }
 
 .bg-comicsStripe {

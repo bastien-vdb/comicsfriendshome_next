@@ -23,7 +23,7 @@ function Team(props) {
 function Member({ name, position, url }) {
     return (
         <div className="flex justify-center">
-            <div className="block p-6 rounded-2xl shadow-lg border border-gray-600 max-w-sm">
+            <div className="block p-6 rounded-2xl shadow-lg border border-gray-600 max-w-sm shadow-4xl shadow-lg shadow-[#9850b3]">
                 <Image alt={name} src={url} height={200} width={200} />
                 <h5 className="mt-8 text-xl leading-tight font-medium mb-2">{name}</h5>
                 <p className="text-red-100 text-base mb-4">
