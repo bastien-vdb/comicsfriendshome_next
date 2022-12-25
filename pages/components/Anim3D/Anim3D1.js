@@ -1,12 +1,9 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, Suspense, useEffect  } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useGLTF } from '@react-three/drei';
-import Model from './Model';
 
 import { useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { Suspense, useEffect } from "react";
-import { OrbitControls, Stars, Float, ScrollControls, Scroll, useScroll } from '@react-three/drei';
+import { ScrollControls, Scroll, useScroll } from '@react-three/drei';
 
 function Anim3D1(props) {
 
@@ -34,7 +31,7 @@ function Anim3D1(props) {
 }
 
 function Scene(props) {
-    const comicImg = useLoader(GLTFLoader, 'opened_comics_book.glb');
+    const comicImg = useLoader(GLTFLoader, '/opened_comics_book.glb');
 
     const ref = useRef()
     const data = useScroll()
