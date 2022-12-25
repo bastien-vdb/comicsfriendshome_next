@@ -4,6 +4,7 @@ import Team from './components/Corpus/Team';
 import GoConnectWallet from './components/Corpus/GoConnectWallet';
 import Footer from './components/Footer/Footer';
 import Head from 'next/head';
+import Anim3D1 from './components/Anim3D/Anim3D1';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -19,6 +20,7 @@ export default function Home() {
       </Head>
       <main>
         <AppBarMainMenu />
+        <Anim3D1/>
         <Partnership />
         <Team />
         <GoConnectWallet />

@@ -13,12 +13,12 @@ function Goals(props) {
     }
 
     const handleAccordion2 = () => {
-         setAccordionIsOpen2(e => !e);
-     }
+        setAccordionIsOpen2(e => !e);
+    }
 
-     const handleAccordion3 = () => {
-         setAccordionIsOpen3(e => !e);
-     }
+    const handleAccordion3 = () => {
+        setAccordionIsOpen3(e => !e);
+    }
 
     return (
         <>
@@ -35,22 +35,12 @@ function Goals(props) {
                                 In the past comic books, artists have often been overlooked in the world of art or they haven’t been given the due credit that they deserve.  Artists have struggled with obtaining rights and receiving royalty rates.
                             </p>
                         </div>
-                        <button style={{ display: accordionIsOpen1 ? 'none' : 'block' }}>
-                            <div className='rounded-full border border-yellow-600'>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                </svg>
-                            </div>
-                        </button>
+                        <ButtonOpenAccordion accordionIsOpen={accordionIsOpen1} />
                     </div>
 
                     <div style={{ display: accordionIsOpen1 ? 'block' : 'none' }} className='accordion-body border-0 flex gap-32'>
 
-                        <button style={{ float: 'right' }} onClick={handleAccordion1}>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-                            </svg>
-                        </button>
+                        <ButtonCloseAccordion handleAccordion={handleAccordion1} />
                         <div className='w-full'>
                             <img alt='Guiding artists_pic.png' src='/Guiding artists_pic.png' />
                         </div>
@@ -78,22 +68,12 @@ function Goals(props) {
                                 In the past comic books, artists have often been overlooked in the world of art or they haven’t been given the due credit that they deserve.  Artists have struggled with obtaining rights and receiving royalty rates.
                             </p>
                         </div>
-                        <button style={{ display: accordionIsOpen2 ? 'none' : 'block' }}>
-                            <div className='rounded-full border border-yellow-600'>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                </svg>
-                            </div>
-                        </button>
+                        <ButtonOpenAccordion accordionIsOpen={accordionIsOpen2} />
                     </div>
 
                     <div style={{ display: accordionIsOpen2 ? 'block' : 'none' }} className='accordion-body border-0 flex gap-32'>
 
-                        <button style={{ float: 'right' }} onClick={handleAccordion2}>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-                            </svg>
-                        </button>
+                        <ButtonCloseAccordion handleAccordion={handleAccordion2} />
                         <div className='w-full'>
                             <img alt='VitualComicMuseum_pic.png' src='/VitualComicMuseum_pic.png' />
                         </div>
@@ -121,22 +101,12 @@ function Goals(props) {
                                 In the past comic books, artists have often been overlooked in the world of art or they haven’t been given the due credit that they deserve.  Artists have struggled with obtaining rights and receiving royalty rates.
                             </p>
                         </div>
-                        <button style={{ display: accordionIsOpen3 ? 'none' : 'block' }}>
-                            <div className='rounded-full border border-yellow-600'>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                </svg>
-                            </div>
-                        </button>
+                        <ButtonOpenAccordion accordionIsOpen={accordionIsOpen3} />
                     </div>
 
                     <div style={{ display: accordionIsOpen3 ? 'block' : 'none' }} className='accordion-body border-0 flex gap-32'>
 
-                        <button style={{ float: 'right' }} onClick={handleAccordion3}>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-                            </svg>
-                        </button>
+                        <ButtonCloseAccordion handleAccordion={handleAccordion3} />
                         <div className='w-full'>
                             <img alt='Web3CollectorForum_pic.png' src='/Web3CollectorForum_pic.png' />
                         </div>
@@ -152,12 +122,29 @@ function Goals(props) {
                             </p>
                         </div>
                     </div>
-
                 </div>
-                
             </div>
         </>
     );
+}
+
+function ButtonOpenAccordion({ accordionIsOpen }) {
+    return <button style={{ display: accordionIsOpen ? 'none' : 'block' }}>
+        <div className='rounded-full border border-yellow-600'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+        </div>
+    </button>
+}
+
+function ButtonCloseAccordion({ handleAccordion }) {
+    return <button style={{ float: 'right' }} onClick={handleAccordion}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+        </svg>
+    </button>
+
 }
 
 export default Goals;
