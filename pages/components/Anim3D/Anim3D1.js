@@ -31,7 +31,7 @@ function Anim3D1(props) {
 }
 
 function Scene(props) {
-    const comicImg = useLoader(GLTFLoader, '/opened_comics_book.glb');
+    const comicImg = useLoader(GLTFLoader, '/public/opened_comics_book.glb');
 
     const ref = useRef()
     const data = useScroll()
