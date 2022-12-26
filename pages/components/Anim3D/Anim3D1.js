@@ -1,4 +1,4 @@
-import React, { useRef, Suspense, useEffect  } from 'react';
+import React, { useRef, Suspense, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 
 import { useLoader } from '@react-three/fiber';
@@ -9,14 +9,14 @@ function Anim3D1(props) {
 
     return (
 
-        <div className='h-screen opacity-10 w-full block fixed z-40' style={{overflow: 'hidden', display: 'block'}}>
+        <div className='h-screen opacity-10 w-full block fixed z-40' style={{ overflow: 'hidden', display: 'block' }}>
             <Canvas>
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
                 <ScrollControls
                     pages={1} // Each page takes 100% of the height of the canvas
                     distance={0.1} // A factor that increases scroll bar travel (default: 1)
-                    damping={0.1} // Friction, higher is faster (default: 4)
+                    damping={0.5} // Friction, higher is faster (default: 4)
                     horizontal={false} // Can also scroll horizontally (default: false) - Allow movement at the sametime as scrolling the page
                     infinite={false} // Can also scroll infinitely (default: false)
                 >
@@ -24,7 +24,6 @@ function Anim3D1(props) {
                         <Scene position={[0, 0, 0]} />
                     </Scroll>
                 </ScrollControls>
-
             </Canvas>
         </div>
     );
@@ -51,14 +50,18 @@ function Scene(props) {
 
     });
 
-    useEffect(()=>{console.log(data)},[data])
+    useEffect(() => { console.log(data) }, [data])
 
     return (
-        <Suspense>
+        <>
+            <Suspense className='hidden sm:block'>
+                <primitive ref={ref} {...props} object={comicImg.scene} position={[0, 1, 1]} scale={0.1} />
+            </Suspense >
 
-            <primitive ref={ref} {...props} object={comicImg.scene} position={[0, 1, 1]} scale={0.1} />
-
-        </Suspense >
+            <Suspense className='sm:hidden'>
+                <primitive ref={ref} {...props} object={comicImg.scene} position={[0, 1, 1]} scale={0.07} />
+            </Suspense >
+        </>
     )
 }
 
