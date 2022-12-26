@@ -19,9 +19,8 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet" />
       </Head>
       <main>
-        <Anim3D1 />
         <AppBarMainMenu />
-
+        <Anim3D1/>
         <Partnership />
         <Team />
         <GoConnectWallet />

@@ -15,9 +15,9 @@ function Anim3D1(props) {
                 <pointLight position={[10, 10, 10]} />
                 <ScrollControls
                     pages={1} // Each page takes 100% of the height of the canvas
-                    distance={2} // A factor that increases scroll bar travel (default: 1)
-                    damping={4} // Friction, higher is faster (default: 4)
-                    horizontal={true} // Can also scroll horizontally (default: false) - Allow movement at the sametime as scrolling the page
+                    distance={0.1} // A factor that increases scroll bar travel (default: 1)
+                    damping={0.1} // Friction, higher is faster (default: 4)
+                    horizontal={false} // Can also scroll horizontally (default: false) - Allow movement at the sametime as scrolling the page
                     infinite={false} // Can also scroll infinitely (default: false)
                 >
                     <Scroll>
@@ -41,13 +41,13 @@ function Scene(props) {
 
         // Will be 0 when the scrollbar is at the starting position,
         // then increase to 1 until 1 / 3 of the scroll distance is reached
-        const a = data.range(0, 1 / 6);
-        const b = data.range(0, 1 / 2);
-        const c = data.range(0, 1);
+        const a = data.range(0, 1 / 3);
+        // const b = data.curve(0, 1 / 2);
+        // const c = data.curve(0, 1);
 
         ref.current.rotation.x = a;
-        ref.current.rotation.y = b;
-        ref.current.rotation.z = c;
+        // ref.current.rotation.y = b;
+        // ref.current.rotation.z = c;
 
     });
 
