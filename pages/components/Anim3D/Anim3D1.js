@@ -9,7 +9,7 @@ function Anim3D1(props) {
 
     return (
 
-        <div className='h-screen opacity-50 w-full block' style={{overflow: 'hidden', display: 'block'}}>
+        <div className='h-screen opacity-10 w-full block fixed z-40' style={{overflow: 'hidden', display: 'block'}}>
             <Canvas>
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
