@@ -17,7 +17,7 @@ function Anim3D1(props) {
                     pages={1} // Each page takes 100% of the height of the canvas
                     distance={2} // A factor that increases scroll bar travel (default: 1)
                     damping={4} // Friction, higher is faster (default: 4)
-                    horizontal={false} // Can also scroll horizontally (default: false)
+                    horizontal={true} // Can also scroll horizontally (default: false) - Allow movement at the sametime as scrolling the page
                     infinite={false} // Can also scroll infinitely (default: false)
                 >
                     <Scroll>
