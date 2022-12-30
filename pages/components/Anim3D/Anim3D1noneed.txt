@@ -21,7 +21,7 @@ function Anim3D1(props) {
                     infinite={false} // Can also scroll infinitely (default: false)
                 >
                     <Scroll>
-                        <Scene position={[0, 0, 0]} />
+                        <Scene />
                     </Scroll>
                 </ScrollControls>
             </Canvas>
@@ -32,34 +32,38 @@ function Anim3D1(props) {
 function Scene(props) {
     const comicImg = useLoader(GLTFLoader, '/opened_comics_book/scene.gltf');
 
-    const ref = useRef()
-    const data = useScroll()
+    const ref = useRef(null)
+    const {scroll} = useScroll(ref)
     useFrame(() => {
         // data.offset = current scroll position, between 0 and 1, dampened
         // data.delta = current delta, between 0 and 1, dampened
 
         // Will be 0 when the scrollbar is at the starting position,
         // then increase to 1 until 1 / 3 of the scroll distance is reached
-        const a = data.range(0, 1 / 3);
+        // const a = data.range(0, 1 / 3);
         // const b = data.curve(0, 1 / 2);
         // const c = data.curve(0, 1);
 
-        ref.current.rotation.x = a;
+        // ref.current.rotation.x = a;
         // ref.current.rotation.y = b;
         // ref.current.rotation.z = c;
+        
 
     });
 
-    useEffect(() => { console.log(data) }, [data])
+    useEffect(()=>{
+        console.log(scroll);
+        console.log(scroll.x)
+    },[scroll])
 
     return (
         <>
             <Suspense className='hidden sm:block'>
-                <primitive ref={ref} {...props} object={comicImg.scene} position={[0, 1, 1]} scale={0.1} />
+                <primitive ref={ref} {...props} object={comicImg.scene} position={[scroll.x, 1, 1]} scale={0.1} />
             </Suspense >
 
             <Suspense className='sm:hidden'>
-                <primitive ref={ref} {...props} object={comicImg.scene} position={[0, 1, 1]} scale={0.07} />
+                <primitive ref={ref} {...props} object={comicImg.scene} position={[scroll.x, 1, 1]} scale={0.07} />
             </Suspense >
         </>
     )

@@ -34,10 +34,35 @@ a {
   }
 }
 
-body {
-  background-image: url('../public/mainBackground.png');
+/* body {
+  background-image: url('../public/mainBackground.jpeg');
   color: white;
+  background: url('/mainBackground.jpeg') no-repeat center center fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
 
+/* body {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.8)), url('/mainBackground.jpeg') fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
+body {
+  color: white;
+  background: url('/mainBackground_v2.jpg') fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 p {
@@ -50,6 +75,14 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: inset 0 0 0 2000px rgba(12, 5, 26, 0.75);
+}
+
+.bg-comicsStripe_v2 {
+  background-image: url('/l1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* box-shadow: inset 0 0 0 2000px rgba(12, 5, 26, 0.75); */
 }
 
 .comicsParagraphe {
