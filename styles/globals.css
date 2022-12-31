@@ -63,6 +63,18 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow-x: hidden;
+
+  animation: moveBg 15s linear infinite;
+}
+
+@keyframes moveBg {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
 }
 
 p {

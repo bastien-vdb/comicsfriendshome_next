@@ -11,7 +11,16 @@ function AboutComicsFriends(props) {
         gsap.to("#comicsMove", {
             duration: 5,
             x: 30,
-            scale: 1.2,
+            // scale: 1.2,
+            repeat: -1,
+            yoyo: true,
+            delay: 1,
+        });
+
+        gsap.to("#comicsMove2", {
+            duration: 5,
+            x: -30,
+            // scale: 1.2,
             repeat: -1,
             yoyo: true,
             delay: 1,
@@ -20,23 +29,24 @@ function AboutComicsFriends(props) {
 
     return (
         <>
-
-            <Image
-                src='/l1.png'
-                alt="comicsCloudImg"
-                className='comicsMove absolute w-full h-3/4 opacity-50'
-                id='comicsMove'
-                width={1440}
-                height={619}
-            />
-            <Image
-                src='/l2.png'
-                alt="comicsCloudImg"
-                className='comicsMove absolute w-full h-3/4 opacity-50 translate-y-96'
-                id='comicsMove'
-                width={1440}
-                height={619}
-            />
+            <div >
+                <Image
+                    src='/l1.png'
+                    alt="comicsCloudImg"
+                    className='comicsMove absolute w-full h-3/4 opacity-50'
+                    id='comicsMove2'
+                    width={1440}
+                    height={619}
+                />
+                <Image
+                    src='/l2.png'
+                    alt="comicsCloudImg"
+                    className='comicsMove2 absolute w-full h-3/4 opacity-50 translate-y-96'
+                    id='comicsMove'
+                    width={1440}
+                    height={619}
+                />
+            </div>
 
             <AppBarMainMenu />
             <div className='paw' style={{ position: 'relative' }}>
@@ -72,7 +82,6 @@ function AboutComicsFriends(props) {
                     </div>
                 </div>
             </div>
-
         </>
     );
 }
