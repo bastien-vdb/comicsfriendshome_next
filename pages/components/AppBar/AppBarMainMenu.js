@@ -18,7 +18,7 @@ const NavigationBar = () => {
     return (
         <nav>
             <div className='deskTopMenu flex justify-between items-center m-2'>
-                <Image alt='logo.png' src='/logo.png' className='m-2' height={500} width={200} />
+                <Image alt='logo.png' src='/logo.png' className='m-2 z-50' height={500} width={200} />
                 <ul className='flex gap-4 mr-20'>
                     {pages.map((e, key) => (
                         <DeskTopButton key={key} pages={e} />

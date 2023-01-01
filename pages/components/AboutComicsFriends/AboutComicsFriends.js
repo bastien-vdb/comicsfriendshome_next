@@ -10,8 +10,8 @@ function AboutComicsFriends(props) {
     useEffect(() => {
         gsap.to("#comicsMove", {
             duration: 5,
-            x: 30,
-            // scale: 1.2,
+            x: 50,
+            scale: 1.2,
             repeat: -1,
             yoyo: true,
             delay: 1,
@@ -19,36 +19,38 @@ function AboutComicsFriends(props) {
 
         gsap.to("#comicsMove2", {
             duration: 5,
-            x: -30,
-            // scale: 1.2,
+            x: -50,
+            scale: 1.1,
             repeat: -1,
             yoyo: true,
-            delay: 1,
+            // delay: 1,
         });
+
     }, [])
 
     return (
         <>
-            <div >
+        
+            <div className=''>
                 <Image
                     src='/l1.png'
                     alt="comicsCloudImg"
-                    className='comicsMove absolute w-full h-3/4 opacity-50'
-                    id='comicsMove2'
+                    className='absolute w-full scale-110 h-3/4 opacity-50'
+                    id='comicsMove'
                     width={1440}
                     height={619}
                 />
                 <Image
                     src='/l2.png'
                     alt="comicsCloudImg"
-                    className='comicsMove2 absolute w-full h-3/4 opacity-50 translate-y-96'
-                    id='comicsMove'
+                    className='absolute w-full scale-110 h-3/4 opacity-50 translate-y-96'
+                    id='comicsMove2'
                     width={1440}
                     height={619}
                 />
             </div>
-
             <AppBarMainMenu />
+            
             <div className='paw' style={{ position: 'relative' }}>
                 <div className='p-6 flex h-full items-center justify-center lg:py-20 lg:px-64' id='blocAbout'>
                     <div className='aboutComicsFriendsBloc w-full p-2 py-4 text-sm flex flex-wrap justify-center items-center rounded-xl lg:text-base lg:flex-nowrap lg:p-10'>
