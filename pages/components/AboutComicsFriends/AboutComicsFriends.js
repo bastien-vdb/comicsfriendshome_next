@@ -11,7 +11,7 @@ function AboutComicsFriends(props) {
         gsap.to("#comicsMove", {
             duration: 5,
             x: 50,
-            scale: 1.2,
+            // scale: 1.2,
             repeat: -1,
             yoyo: true,
             delay: 1,
@@ -20,7 +20,7 @@ function AboutComicsFriends(props) {
         gsap.to("#comicsMove2", {
             duration: 5,
             x: -50,
-            scale: 1.1,
+            // scale: 1.1,
             repeat: -1,
             yoyo: true,
             // delay: 1,
