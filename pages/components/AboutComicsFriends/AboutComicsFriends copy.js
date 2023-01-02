@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import image1 from '/public/images/comicsCloud_composed.png';
 import AppBarMainMenu from '../AppBar/AppBarMainMenu';
@@ -7,31 +7,50 @@ import { gsap } from "gsap";
 
 function AboutComicsFriends(props) {
 
-    const [comicsStack, setComicsStack] = useState([]);
-
     useEffect(() => {
-        // gsap.to(".comicsFriendsStackImages", {
-        //     duration: 10,
-        //     x: "240",
-        //     repeat: -1,
-        //     yoyo: true,
-        //     delay: 1,
-        // });
-        setComicsStack(() => comicsStackBuild());
+        gsap.to("#comicsMove1", {
+            duration: 5,
+            x: 50,
+            // scale: 1.2,
+            repeat: -1,
+            yoyo: true,
+            delay: 1,
+        });
+
+        gsap.to("#comicsMove2", {
+            duration: 5,
+            x: -50,
+            // scale: 1.1,
+            repeat: -1,
+            yoyo: true,
+            // delay: 1,
+        });
+
     }, [])
 
     return (
         <>
-            {/* <div className='comicsStack translate-y-48 rotate-90'>
-                {comicsStack.map((e, key)=>(
-                    <img key={e.id} src={e.link} alt={e.link}/>
-                ))}
-            </div> */}
+            <div className=''>
+                <Image
+                    src='/l1.png'
+                    alt="comicsCloudImg"
+                    className='comicsMove absolute w-full scale-110 opacity-50 translate-x-0'
+                    id='comicsMove1'
+                    width={1440}
+                    height={619}
+                />
+                <Image
+                    src='/l2.png'
+                    alt="comicsCloudImg"
+                    className='comicsMove absolute w-full scale-110 opacity-50 translate-y-96 translate-x-0'
+                    id='comicsMove2'
+                    width={1440}
+                    height={619}
+                />
+            </div>
+            <AppBarMainMenu />
 
-                <div className='paw'></div>
-                <div className='paw2'></div>
-            <div>
-                <AppBarMainMenu />
+            <div className='paw' style={{ position: 'relative' }}>
                 <div className='p-6 flex h-full items-center justify-center lg:py-20 lg:px-64' id='blocAbout'>
                     <div className='aboutComicsFriendsBloc w-full p-2 py-4 text-sm flex flex-wrap justify-center items-center rounded-xl lg:text-base lg:flex-nowrap lg:p-10'>
                         <div className='sm:p-2 w-[30em] sm:w-[40em]'>
@@ -66,16 +85,6 @@ function AboutComicsFriends(props) {
             </div>
         </>
     );
-}
-
-
-export const comicsStackBuild = () => {
-    const arr = [];
-    for (let i = 1; i < 8; i++) {
-        const obj = { id: i, link: '/images/ComicsFriendStripeL3/' + i + '.png' }
-        arr.push(obj);
-    }
-    return arr;
 }
 
 export default AboutComicsFriends;

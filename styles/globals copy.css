@@ -80,82 +80,16 @@ body {
   }
 }
 
-.comicsFriendStack  {
-  -ms-overflow-style: none;  /* Internet Explorer 10 and 11 */
-   scrollbar-width: none;  /* Firefox */
+.comicsMove {
+  animation: moveComicsStacks 10s linear infinite;
 }
 
-.comicsFriendStack::-webkit-scrollbar {  /* WebKit */
-  display: none;
-}
-
-.paw {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 15%;
-  left: 0;
-  width: 100%;
-  transform: rotate(5deg);
-  background-image: url('/images/l1_v2.png');
-  background-repeat: repeat-x;
-  animation: moveStack 10s linear infinite;
-  animation-iteration-count: infinite;
-  transform-origin: 0 0;
-}
-
-@keyframes moveStack {
+@keyframes moveComicsStacks {
   from {
-    background-position: 0% 0%;
+    transform: translateX(0);
   }
   to {
-    background-position: 100% 0%;
-  }
-}
-
-.paw2 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 60%;
-  left: 0;
-  width: 100%;
-  transform: rotate(5deg);
-  background-image: url('/images/l1_v2.png');
-  background-repeat: repeat-x;
-  animation: moveStack2 10s linear infinite;
-  animation-iteration-count: infinite;
-  transform-origin: 0 0;
-}
-
-@keyframes moveStack2 {
-  from {
-    background-position: 100% 0%;
-  }
-  to {
-    background-position: 0% 0%;
-  }
-}
-
-@media (max-width: 768px) {
-  .paw {
-    top: 30%;
-  }
-
-  .paw2 {   
-    top: 80%;
-  }
-}
-
-@media (orientation: landscape) {
-  .paw {
-    top: 5%;
-  }
-
-  .paw2 {
-    top: 70%;
+    transform: translate(50px);
   }
 }
 
