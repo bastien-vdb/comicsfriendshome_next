@@ -1,10 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import AppBarMainMenu from '../AppBar/AppBarMainMenu';
+import Footer from '../Footer/Footer';
 
 function Genesis(props) {
     return (
         <>
+            <div className='comicsStack'></div>
+            <div className='comicsStack2'></div>
             <AppBarMainMenu />
             <div className='bg-comicsStripe flex flex-col gap-6 p-6 mt-10'>
                 <div className='flex flex-wrap flex-col lg:flex-row justify-center items-center lg:gap-44'>
@@ -37,6 +40,7 @@ function Genesis(props) {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }

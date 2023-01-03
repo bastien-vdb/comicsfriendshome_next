@@ -34,27 +34,6 @@ a {
   }
 }
 
-/* body {
-  background-image: url('../public/mainBackground.jpeg');
-  color: white;
-  background: url('/mainBackground.jpeg') no-repeat center center fixed;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
-
-/* body {
-  color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.8)), url('/mainBackground.jpeg') fixed;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
-
 body {
   color: white;
   background: url('/mainBackground_v2.jpg') fixed;
@@ -80,25 +59,15 @@ body {
   }
 }
 
-.comicsFriendStack  {
-  -ms-overflow-style: none;  /* Internet Explorer 10 and 11 */
-   scrollbar-width: none;  /* Firefox */
-}
-
-.comicsFriendStack::-webkit-scrollbar {  /* WebKit */
-  display: none;
-}
-
-.paw {
+.comicsStack {
   width: 100%;
-  height: 100%;
+  height: 40%;
   position: absolute;
   z-index: -1;
-  top: 15%;
+  top: 10%;
   left: 0;
-  width: 100%;
   transform: rotate(5deg);
-  background-image: url('/images/l1_v2.png');
+  background-image: url('/images/l1_v3.png');
   background-repeat: repeat-x;
   animation: moveStack 10s linear infinite;
   animation-iteration-count: infinite;
@@ -114,16 +83,15 @@ body {
   }
 }
 
-.paw2 {
+.comicsStack2 {
   width: 100%;
-  height: 100%;
+  height: 40%;
   position: absolute;
   z-index: -1;
-  top: 60%;
+  top: 50%;
   left: 0;
-  width: 100%;
   transform: rotate(5deg);
-  background-image: url('/images/l1_v2.png');
+  background-image: url('/images/l1_v3.png');
   background-repeat: repeat-x;
   animation: moveStack2 10s linear infinite;
   animation-iteration-count: infinite;
@@ -140,43 +108,28 @@ body {
 }
 
 @media (max-width: 768px) {
-  .paw {
+  .comicsStack {
     top: 30%;
   }
 
-  .paw2 {   
+  .comicsStack2 {   
     top: 80%;
   }
 }
 
-@media (orientation: landscape) {
-  .paw {
-    top: 5%;
+@media (orientation: landscape) and (max-width: 1024px) {
+  .comicsStack {
+    top: 50%;
   }
 
-  .paw2 {
-    top: 70%;
+  .comicsStack2 {
+    top: 150%;
   }
 }
 
 p {
   color: rgba(229, 217, 255, 1);
-}
-
-.bg-comicsStripe {
-    background-image: url('/Stripes_pic.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: inset 0 0 0 2000px rgba(12, 5, 26, 0.75);
-}
-
-.bg-comicsStripe_v2 {
-  background-image: url('/l1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-position: center; */
-  /* box-shadow: inset 0 0 0 2000px rgba(12, 5, 26, 0.75); */
+  text-align: justify;
 }
 
 .comicsParagraphe {
