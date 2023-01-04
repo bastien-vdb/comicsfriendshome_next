@@ -12,7 +12,7 @@ function Footer(props) {
                 </div>
 
                 <div className='flex flex-wrap justify-between items-center sm:gap-8 sm:m-2'>
-                    <Link href='/components/Footer/TermsAndConditions'>Terms & Conditions</Link>
+                    {/* <Link href='/components/Footer/TermsAndConditions'>Terms & Conditions</Link> */}
                     <Link href='/components/Footer/PrivacyAndPolicy'>Privacy & Policy</Link>
                 </div>
             </div>

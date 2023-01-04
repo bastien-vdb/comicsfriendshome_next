@@ -51,9 +51,11 @@ body {
   0% {
     background-position: 0% 0%;
   }
+
   50% {
     background-position: 100% 100%;
   }
+
   100% {
     background-position: 0% 0%;
   }
@@ -78,6 +80,7 @@ body {
   from {
     background-position: 0% 0%;
   }
+
   to {
     background-position: 100% 0%;
   }
@@ -102,6 +105,7 @@ body {
   from {
     background-position: 100% 0%;
   }
+
   to {
     background-position: 0% 0%;
   }
@@ -112,7 +116,7 @@ body {
     top: 30%;
   }
 
-  .comicsStack2 {   
+  .comicsStack2 {
     top: 80%;
   }
 }
@@ -141,4 +145,46 @@ p {
 .comicsCard {
   background-color: rgba(255, 255, 255, 0.15);
   border-radius: 16px;
+}
+
+.PrivacyAndPolicy h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.PrivacyAndPolicy h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold
+}
+
+.PrivacyAndPolicy h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.PrivacyAndPolicy li {
+  margin-left: 30px;
+}
+
+.PrivacyAndPolicy ul {
+  list-style-type: disc;
+}
+
+.PrivacyAndPolicy a {
+  text-decoration: underline;
 }
