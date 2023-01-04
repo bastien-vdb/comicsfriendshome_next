@@ -8,7 +8,7 @@ const NavigationBar = () => {
     const pages = [
         { name: 'Home', link: '/' },
         { name: 'About', link: '/components/AboutComicsFriends/AboutComicsFriends' },
-        { name: 'Goals', link: '/components/Goals/Goals' },
+        // { name: 'Goals', link: '/components/Goals/Goals' },
         { name: 'Genesis', link: '/components/Genesis/Genesis' },
         { name: 'Partnership', link: '/#anchor_Partnership' },
         { name: 'Team', link: '/#anchor_Team' },
