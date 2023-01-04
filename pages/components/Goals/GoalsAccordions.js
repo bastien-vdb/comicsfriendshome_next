@@ -3,7 +3,7 @@ import ButtonCloseAccordion from '../reusable/ButtonCloseAccordion';
 import ButtonOpenAccordion from '../reusable/ButtonOpenAccordion';
 import Image from 'next/image';
 
-function GoalsAccordions({ GoalsContent }) {
+function GoalsAccordions({ GoalsContent = {} }) {
     const [accordionIsOpen1, setAccordionIsOpen] = useState(false);
 
     const handleAccordion = () => {
@@ -15,7 +15,6 @@ function GoalsAccordions({ GoalsContent }) {
             <div className='flex flex-col justify-between items-center p-4 gap-4 md:flex-row' onClick={handleAccordion}>
                 <div className='flex flex-col items-center justify-between md:flex-row' style={{ display: accordionIsOpen1 ? 'none' : 'flex' }}>
                     <Image width={GoalsContent.width} height={GoalsContent.height} className='paw1' alt={GoalsContent.source} src={GoalsContent.source} />
-                    <img alt={GoalsContent.source} src={GoalsContent ? GoalsContent.source : '/logo.png'} />
                     <div className='md:w-1/2'>
                         {GoalsContent.p1}
                     </div>
