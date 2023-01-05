@@ -1,6 +1,5 @@
-import AppBarMainMenu from '../AppBar/AppBarMainMenu';
+import Head from 'next/head';
 import GoalsAccordions from './GoalsAccordions';
-import Footer from '../Footer/Footer';
 
 function Goals(props) {
 
@@ -33,17 +32,22 @@ function Goals(props) {
 
     return (
         <>
-            <div className='comicsStack'></div>
-            <div className='comicsStack2'></div>
-            <AppBarMainMenu />
-            <div className='text-sm'>
-                <span className='text-white text-6xl m-4'>Goals</span>
+            <Head>
+                <title>Goals - Comics Friends: Supporting and Guiding Artists</title>
+                <meta name="description" content="Discover the goals of Comics Friends, a platform that supports and guides artists in the creation and exposure of their work. Learn how Comics Friends helps artists receive the visibility and credit they deserve through NFT collections and virtual stages, and how we work closely with artists to ensure their vision is achieved." />
+            </Head>
 
-                <div className='flex justify-between flex-col'>
-                    {GoalsContent.map((e, key) => <GoalsAccordions GoalsContent={e} />)}
+            <main className='relative' id='anchor_Goals'>
+                <div className='comicsStack'></div>
+                <div className='comicsStack2'></div>
+
+                <div className='text-sm'>
+                    <span className='p-8 lg:p-44 xl:p-72 text-3xl sm:text-4xl md:text-6xl lg:text-7xl'>Goals</span>
+                    <div className='flex justify-between flex-col'>
+                        {GoalsContent.map((e, key) => <GoalsAccordions GoalsContent={e} />)}
+                    </div>
                 </div>
-            </div>
-            <Footer />
+            </main>
         </>
     );
 }

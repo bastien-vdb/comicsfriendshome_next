@@ -1,22 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 
 function Team(props) {
 
     return (
-        <div>
-            <div id='anchor_Team'></div>
-            <div className='mt-20 p-10 text-sm sm:text-base flex flex-wrap justify-center items-center gap-6 sm:gap-40'>
-                <span className='text-white text-4xl lg:text-6xl m-4 block'>The Team</span>
-                <p className='w-[40em]'>Introducing the Comics friends team. The team is made up of a range of individuals with expertise in their individuals' fields of work. The commonality between all of them is their shared passion for the Comic Book universe.</p>
-            </div>
-            <div className='mt-16 flex items-center justify-center flex-wrap gap-6 sm:gap-16 sm:mx-30 lg:mx-60'>
-                {members.map((e, key) => (
-                    <Member key={key} name={e.name} position={e.position} url={e.url} />
-                ))
-                }
-            </div>
-        </div>
+        <>
+            <Head>
+                <title>Team - Meet the Members of Comics Friends</title>
+                <meta name="description" content="Meet the Comics Friends team, a group of passionate individuals with expertise in various fields working together to support and guide artists. Learn more about the team members and their roles on the Comics Friends platform." />
+            </Head>
+
+            <main id='anchor_Team'>
+                <div className='mt-20 p-10 text-sm sm:text-base flex flex-wrap justify-center items-center gap-6 sm:gap-40'>
+                    <span className='p-2 text-3xl sm:text-4xl md:text-6xl lg:text-7xl'>The Team</span>
+                    <p className='w-[40em]'>Introducing the Comics friends team. The team is made up of a range of individuals with expertise in their individuals' fields of work. The commonality between all of them is their shared passion for the Comic Book universe.</p>
+                </div>
+                <div className='mt-16 flex items-center justify-center flex-wrap gap-6 sm:gap-16 sm:mx-30 lg:mx-60'>
+                    {members.map((e, key) => (
+                        <Member key={key} name={e.name} position={e.position} url={e.url} />
+                    ))
+                    }
+                </div>
+            </main>
+        </>
     );
 }
 

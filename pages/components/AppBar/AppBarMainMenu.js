@@ -6,10 +6,9 @@ const NavigationBar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const pages = [
-        { name: 'Home', link: '/' },
-        { name: 'About', link: '/components/AboutComicsFriends/AboutComicsFriends' },
-        { name: 'Goals', link: '/components/Goals/Goals' },
-        { name: 'Genesis', link: '/components/Genesis/Genesis' },
+        { name: 'About', link: '/#anchor_About' },
+        { name: 'Goals', link: '/#anchor_Goals' },
+        { name: 'Genesis', link: '/#anchor_Partnership' },
         { name: 'Partnership', link: '/#anchor_Partnership' },
         { name: 'Team', link: '/#anchor_Team' },
         { name: 'Authenticate', link: '/#anchor_Authenticate' }
