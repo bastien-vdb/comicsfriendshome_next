@@ -1,6 +1,7 @@
 import React from 'react';
 import AppBarMainMenu from '../AppBar/AppBarMainMenu';
 import Footer from './Footer';
+import Head from 'next/head';
 
 function PrivacyAndPolicy(props) {
     return (
