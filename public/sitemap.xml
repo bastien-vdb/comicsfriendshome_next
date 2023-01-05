@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://comicsfriends.io</loc><lastmod>2023-01-05T20:03:13.380Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://comicsfriends.io/components/AboutComicsFriends/AboutComicsFriends</loc><lastmod>2023-01-05T20:03:13.380Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://comicsfriends.io/components/Corpus/GoConnectWallet</loc><lastmod>2023-01-05T20:03:13.380Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://comicsfriends.io/components/Corpus/Partnership</loc><lastmod>2023-01-05T20:03:13.380Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://comicsfriends.io/components/Corpus/Team</loc><lastmod>2023-01-05T20:03:13.380Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://comicsfriends.io/components/Footer/PrivacyAndPolicy</loc><lastmod>2023-01-05T20:03:13.380Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://comicsfriends.io/components/Genesis/Genesis</loc><lastmod>2023-01-05T20:03:13.380Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://comicsfriends.io/components/Goals/Goals</loc><lastmod>2023-01-05T20:03:13.380Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://comicsfriends.io/components/Goals/GoalsAccordions</loc><lastmod>2023-01-05T20:03:13.380Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>
