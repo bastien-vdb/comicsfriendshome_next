@@ -22,6 +22,7 @@ export default function Home() {
         <meta property="og:description" content="Welcome to Comics Friends, home to all comic book and artwork lovers and admirers. Comics Friends is a project built on the shared passion for comic books and comic artwork and the idea of bringing this community together using NFTs. Visit our forum to share your vision, thoughts, and critiques on existing and upcoming collections or exhibitions as well as all other Comics Friends related events." />
         <meta property="og:image" content="https://comicsfriends.art/images/comicsCloud_composed.png" />
         <meta property="og:url" content="https://comicsfriends.art" />
+        <meta property="og:type" content="website" />
       </Head>
       <AppBarMainMenu />
       <main className='flex flex-col gap-20 sm:gap-40'>
