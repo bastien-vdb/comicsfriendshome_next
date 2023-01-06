@@ -4,6 +4,7 @@ import './components/AboutComicsFriends/AboutComicsFriends.css';
 import AppBarMainMenu from './components/AppBar/AppBarMainMenu';
 import Footer from './components/Footer/Footer';
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import Image from 'next/image';
 
 // This is the chainId your dApp will work on.
 const activeChainId = ChainId.Goerli;
@@ -14,9 +15,10 @@ function MyApp({ Component, pageProps }) {
     <Footer />
   </>
   return (
-    <ThirdwebProvider desiredChainId={activeChainId}>
-      <Component {...pageProps} />
-    </ThirdwebProvider >
+
+      <ThirdwebProvider desiredChainId={activeChainId}>
+        <Component {...pageProps} />
+      </ThirdwebProvider >
   )
 }
 

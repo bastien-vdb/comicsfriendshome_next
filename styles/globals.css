@@ -44,7 +44,7 @@ body {
   background-size: cover;
   overflow-x: hidden;
 
-  animation: moveBg 20s linear infinite;
+  /* animation: moveBg 20s linear infinite; */
 }
 
 @keyframes moveBg {
