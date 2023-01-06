@@ -36,7 +36,7 @@ a {
 
 body {
   color: white;
-  background: url('/mainBackground_mobile.jpg') fixed;
+  background: url('/mainBackground_v2.jpg') fixed;
   /* background-repeat: no-repeat; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -112,6 +112,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    background: url('/mainBackgroundMobile.png') fixed;
+  }
+
   .comicsStack {
     top: 30%;
   }
