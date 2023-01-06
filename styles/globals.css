@@ -36,7 +36,7 @@ a {
 
 body {
   color: white;
-  background: url('/mainBackground_v2.jpg') fixed;
+  background: url('/mainBackground_mobile.jpg') fixed;
   /* background-repeat: no-repeat; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -44,7 +44,7 @@ body {
   background-size: cover;
   overflow-x: hidden;
 
-  /* animation: moveBg 20s linear infinite; */
+  animation: moveBg 20s linear infinite;
 }
 
 @keyframes moveBg {
