@@ -5,7 +5,7 @@ function Goals(props) {
 
     const GoalsContent = [
         {
-            source: '/Guiding artists_pic.png',
+            source: '/images/Guiding artists_pic.png',
             description:'Guiding artists image logo',
             width: '226',
             height: '80',
@@ -14,7 +14,7 @@ function Goals(props) {
             p3: `We work very closely with artists from the beginning to the end.  And throughout their creation to ensure that the artist's vision and desired outcome are & their work.`
         },
         {
-            source: '/VitualComicMuseum_pic.png',
+            source: '/images/VitualComicMuseum_pic.png',
             description:'Virtual Comic Museum logo',
             width: '345',
             height: '68',
@@ -23,7 +23,7 @@ function Goals(props) {
             p3: `We work very closely with artists from the beginning to the end.  And throughout their creation to ensure that the artist's vision and desired outcome are & their work.`
         },
         {
-            source: '/Web3CollectorForum_pic.png',
+            source: '/images/Web3CollectorForum_pic.png',
             description:'Web 3 collector Forum logo',
             width: '365',
             height: '70',

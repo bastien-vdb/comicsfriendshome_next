@@ -15,16 +15,16 @@ const NavigationBar = () => {
     ];
 
     return (
-        <nav>
-            <div className='deskTopMenu flex justify-between items-center m-2'>
-                <Image alt='ComicsFriends logo.png' src='/images/logov2.jpeg' className='m-2 z-50' height={500} width={200} />
+        <nav className='fixed z-30 top-0 w-full'>
+            <div className='deskTopMenu flex justify-between items-center mb-2 group relative border-b px-8 py-1 shadow-4xl shadow-lg shadow-[#9850b3]'>
+                <Image alt='ComicsFriends logo.png' src='/images/logov3.png' className='m-2 z-50' height={500} width={200} />
                 <ul className='flex gap-4 mr-20'>
                     {pages.map((e, key) => (
                         <DeskTopButton key={key} pages={e} />
                     ))}
                 </ul>
             </div>
-            <div className='mobileMenu hidden'>
+            <div className='mobileMenu hidden mb-2 group relative border-b px-8 py-1 shadow-4xl shadow-lg shadow-[#9850b3]'>
                 <div className='flex justify-between'>
                     <Image alt='logo.png' src='/logo.png' className='m-2' height={500} width={100} />
                     <button onClick={() => setMenuOpen(true)} className='m-2'>

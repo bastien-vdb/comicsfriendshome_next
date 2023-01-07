@@ -14,6 +14,17 @@
     height: 0;
 }
 
+nav {
+    box-shadow: rgba(92, 92, 92, 0.56) 0px 0px 20px 4px;
+    opacity: 0.9;
+    background: url('/images/mainBackground_v2.jpg') fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
 nav>ul {
     background-color: rgb(26, 16, 63);
 }
@@ -22,9 +33,7 @@ nav>ul {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.mobileMenu {
-    
-}
+.mobileMenu {}
 
 .mobileMenuOpened {
     background-color: rgb(12, 5, 26)
@@ -34,6 +43,7 @@ nav>ul {
     .mobileMenu {
         display: block;
     }
+
     .deskTopMenu {
         display: none;
     }

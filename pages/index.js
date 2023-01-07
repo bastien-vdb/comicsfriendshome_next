@@ -23,8 +23,7 @@ export default function Home() {
         <meta property="og:url" content="https://comicsfriends.io" />
         <meta property="og:type" content="website" />
       </Head>
-      <AppBarMainMenu />
-      <main className='flex flex-col gap-20 sm:gap-40'>
+      <main className='flex flex-col gap-20 sm:gap-40 pt-20'>
         <AboutComicsFriends />
         <Goals />
         <Genesis />
@@ -32,10 +31,6 @@ export default function Home() {
         <Team />
         <GoConnectWallet />
       </main>
-
-      <footer>
-        <Footer />
-      </footer>
     </>
   )
 }

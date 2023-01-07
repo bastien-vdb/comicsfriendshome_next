@@ -1,6 +1,4 @@
 import React from 'react';
-import AppBarMainMenu from '../AppBar/AppBarMainMenu';
-import Footer from './Footer';
 import Head from 'next/head';
 
 function PrivacyAndPolicy(props) {
@@ -11,7 +9,6 @@ function PrivacyAndPolicy(props) {
                 <meta name="description" content="Our Privacy Policy explains how we collect, use, and protect your personal information when you use our website and services. Learn about your privacy rights and how the law protects you." />
             </Head>
 
-            <AppBarMainMenu />
             <main>
                 <div className='comicsStack2'></div>
 
@@ -185,9 +182,6 @@ function PrivacyAndPolicy(props) {
                     </div>
                 </div>
             </main>
-            <footer>
-                <Footer />
-            </footer>
         </>
     );
 }

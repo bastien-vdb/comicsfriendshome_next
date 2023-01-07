@@ -7,7 +7,7 @@ function Footer(props) {
         <>
             <div className='border-t border-gray-700 text-sm mt-10 p-2 flex flex-wrap justify-between items-center'>
                 <div className='flex flex-wrap justify-between items-center sm:gap-8'>
-                    <Image alt='Comicsfriends logo' src='/logo.png' className='m-2' height={500} width={100} />
+                    <Image alt='Comicsfriends logo' src='/images/logov3.png' className='m-2' height={500} width={100} />
                     <p>All rights Reserved By <Link href="https://comicsfriends.io">ComicsFriends</Link></p>
                 </div>
 
