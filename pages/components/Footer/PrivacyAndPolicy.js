@@ -12,7 +12,7 @@ function PrivacyAndPolicy(props) {
             <main>
                 <div className='comicsStack2'></div>
 
-                <div className='PrivacyAndPolicy text-sm md:text-base py-24 px-4 sm:px-32 md:px-32 lg:px-44 xl:px-80 flex flex-col gap-10'>
+                <div className='PrivacyAndPolicy py-24 px-4 sm:px-32 md:px-32 lg:px-44 xl:px-80 flex flex-col gap-10'>
                     <div className='aboutComicsFriendsBloc p-6 sm:p-12 rounded-2xl'>
                         <h1 className='title'>Privacy Policy</h1>
                         <p>Last updated: January 04, 2023</p>

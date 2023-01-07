@@ -9,7 +9,7 @@ function Partnership(props) {
                 <meta name="description" content="Stay up to date on the Comics Friends partnership with world-renowned artist MOEBIOS, also known as JEAN GIRAUD. Discover the upcoming release of the Comics Friends NFT collection, featuring works by this influential artist, and learn more about the collection launch towards the end of October." />
             </Head>
 
-            <main className='mt-20 p-10 text-sm sm:text-base flex flex-col items-center relative' id='anchor_Partnership'>
+            <main className='mt-20 p-10 flex flex-col items-center relative' id='anchor_Partnership'>
                 <div className='comicsStack'></div>
                 <div className='comicsStack2'></div>
                 <h1 className='title'>Comics Friends First Partner NFT Drop</h1>

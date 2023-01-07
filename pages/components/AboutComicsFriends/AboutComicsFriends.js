@@ -15,7 +15,7 @@ function AboutComicsFriends(props) {
                 <div className='comicsStack2'></div>
 
                 <div className='p-6 flex h-full items-center justify-center lg:py-20 lg:px-64' id='blocAbout'>
-                    <div className='aboutComicsFriendsBloc w-full p-2 py-4 text-sm flex flex-wrap justify-center items-center rounded-xl lg:text-base lg:flex-nowrap lg:p-10'>
+                    <div className='aboutComicsFriendsBloc w-full p-2 py-4 flex flex-wrap justify-center items-center rounded-xl lg:flex-nowrap lg:p-10'>
                         <div className='sm:p-2 w-[30em] sm:w-[40em]'>
                             <Image
                                 src={image1}

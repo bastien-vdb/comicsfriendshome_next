@@ -43,8 +43,8 @@ function Goals(props) {
                 <div className='comicsStack'></div>
                 <div className='comicsStack2'></div>
 
-                <div className='text-sm'>
-                    <h1 className='title'>Goals</h1>
+                <div className=''>
+                    <h1 className='title ml-8 lg:ml-72'>Goals</h1>
                     <div className='flex justify-between flex-col'>
                         {GoalsContent.map((e, key) => <GoalsAccordions GoalsContent={e} />)}
                     </div>

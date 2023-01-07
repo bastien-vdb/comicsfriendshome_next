@@ -11,7 +11,7 @@ function Team(props) {
             </Head>
 
             <main id='anchor_Team'>
-                <div className='mt-20 p-10 text-sm sm:text-base flex flex-wrap justify-center items-center gap-6 sm:gap-40'>
+                <div className='mt-20 p-10 flex flex-wrap justify-center items-center gap-6 sm:gap-40'>
                     <h1 className='title'>The Team</h1>
                     <p className='w-[40em]'>Introducing the Comics friends team. The team is made up of a range of individuals with expertise in their individuals' fields of work. The commonality between all of them is their shared passion for the Comic Book universe.</p>
                 </div>
