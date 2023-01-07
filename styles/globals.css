@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Spacegrotesk';
+  src: url('/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*** reusable tailwind class ***/
+@layer components {
+  .title {
+    @apply p-2 text-3xl sm:text-4xl md:text-6xl lg:text-7xl;
+  }
+}
+
+
 html,
 body {
   padding: 0;
@@ -12,6 +27,7 @@ body {
   max-width: 2080px;
   margin: 0 auto !important;
   float: none !important;
+  font-family: 'Spacegrotesk', sans-serif;
 }
 
 a {
@@ -36,7 +52,7 @@ a {
 
 body {
   color: white;
-  background: url('/mainBackground_v2.jpg') fixed;
+  background: url('/images/mainBackground_v2.jpg') fixed;
   /* background-repeat: no-repeat; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -113,13 +129,13 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background: url('/mainBackgroundMobile.png') fixed;
+    background: url('/images/mainBackgroundMobile_v2.png') fixed;
   }
 
   .comicsStack {
     top: 30%;
   }
-
+  
   .comicsStack2 {
     top: 80%;
   }

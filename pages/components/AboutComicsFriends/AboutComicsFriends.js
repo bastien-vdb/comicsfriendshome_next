@@ -7,7 +7,6 @@ function AboutComicsFriends(props) {
     return (
         <>
             <Head>
-                <title>About Comics Friends - Platform for Comics Book Lovers - NFT</title>
                 <meta name="description" content="Welcome to Comics Friends, home to all comic book and artwork lovers and admirers. Comics Friends is a project built on the shared passion for comic books and comic artwork and the idea of bringing this community together using NFTs. Visit our forum to share your vision, thoughts, and critiques on existing and upcoming collections or exhibitions as well as all other Comics Friends related events." />
             </Head>
 
@@ -20,13 +19,13 @@ function AboutComicsFriends(props) {
                         <div className='sm:p-2 w-[30em] sm:w-[40em]'>
                             <Image
                                 src={image1}
-                                alt="comicsCloudImg"
+                                alt="Cloud pictures of several comic pages"
                                 className='w-full'
                             />
                         </div>
                         <div className='p-4 sm:p-16 w-[50em] md:w-[60em] lg:p-2' id='blocAbout_textBloc'>
                             <div>
-                                <span className='p-2 text-3xl sm:text-4xl md:text-6xl lg:text-7xl'>About Comics Friends</span>
+                                <h1 className='title'>About Comics Friends</h1>
                                 <div className='aboutComicsFriendsBlocText mt-10 flex flex-col gap-4'>
                                     <p>
                                         Welcome to Comics Friends, home to all comic books and artwork lovers and admirers.

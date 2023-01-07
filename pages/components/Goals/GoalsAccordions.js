@@ -14,7 +14,7 @@ function GoalsAccordions({ GoalsContent = {} }) {
         <div className='accordion_component bg-[#1B0F2C] m-6 p-4 rounded-xl lg:p-6 lg:mx-40 xl:mx-72'>
             <div className='flex flex-col justify-between items-center p-4 gap-4 md:flex-row' onClick={handleAccordion}>
                 <div className='flex flex-col items-center justify-between md:flex-row' style={{ display: accordionIsOpen1 ? 'none' : 'flex' }}>
-                    <Image width={GoalsContent.width} height={GoalsContent.height} className='paw1' alt={GoalsContent.source} src={GoalsContent.source} />
+                    <Image width={GoalsContent.width} height={GoalsContent.height} className='paw1' alt={GoalsContent.description} src={GoalsContent.source} />
                     <div className='md:w-1/2'>
                         {GoalsContent.p1}
                     </div>

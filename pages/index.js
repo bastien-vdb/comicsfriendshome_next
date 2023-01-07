@@ -14,7 +14,6 @@ export default function Home() {
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet" />
         <title>Comics Friends - NFT Platform for Comics Book Lovers</title>
         <meta name="description" content="Welcome to our NFT community! Join us to buy, sell, and trade unique digital assets. Participate in events and discussions with other NFT enthusiasts. Explore the endless possibilities of the NFT world with us." />
 

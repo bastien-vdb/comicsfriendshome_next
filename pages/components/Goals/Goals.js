@@ -6,6 +6,7 @@ function Goals(props) {
     const GoalsContent = [
         {
             source: '/Guiding artists_pic.png',
+            description:'Guiding artists image logo',
             width: '226',
             height: '80',
             p1: `In the past comic books, artists have often been overlooked in the world of art or they haven’t been given the due credit that they deserve.  Artists have struggled with obtaining rights and receiving royalty rates.`,
@@ -14,6 +15,7 @@ function Goals(props) {
         },
         {
             source: '/VitualComicMuseum_pic.png',
+            description:'Virtual Comic Museum logo',
             width: '345',
             height: '68',
             p1: `In the past comic books, artists have often been overlooked in the world of art or they haven’t been given the due credit that they deserve.  Artists have struggled with obtaining rights and receiving royalty rates.`,
@@ -22,6 +24,7 @@ function Goals(props) {
         },
         {
             source: '/Web3CollectorForum_pic.png',
+            description:'Web 3 collector Forum logo',
             width: '365',
             height: '70',
             p1: `In the past comic books, artists have often been overlooked in the world of art or they haven’t been given the due credit that they deserve.  Artists have struggled with obtaining rights and receiving royalty rates.`,
@@ -33,7 +36,6 @@ function Goals(props) {
     return (
         <>
             <Head>
-                <title>Goals - Comics Friends: Supporting and Guiding Artists</title>
                 <meta name="description" content="Discover the goals of Comics Friends, a platform that supports and guides artists in the creation and exposure of their work. Learn how Comics Friends helps artists receive the visibility and credit they deserve through NFT collections and virtual stages, and how we work closely with artists to ensure their vision is achieved." />
             </Head>
 
@@ -42,7 +44,7 @@ function Goals(props) {
                 <div className='comicsStack2'></div>
 
                 <div className='text-sm'>
-                    <span className='p-8 lg:p-44 xl:p-72 text-3xl sm:text-4xl md:text-6xl lg:text-7xl'>Goals</span>
+                    <h1 className='title'>Goals</h1>
                     <div className='flex justify-between flex-col'>
                         {GoalsContent.map((e, key) => <GoalsAccordions GoalsContent={e} />)}
                     </div>
