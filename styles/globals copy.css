@@ -24,7 +24,7 @@ body {
   font-family: 'Space Grotesk', sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-  max-width: 2560px;
+  max-width: 2080px;
   margin: 0 auto !important;
   float: none !important;
   font-family: 'Spacegrotesk', sans-serif;
@@ -58,40 +58,8 @@ body {
   -o-background-size: cover;
   background-size: cover;
   overflow-x: hidden;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  body {
-    animation: moveBg 20s linear infinite;
-  }
-}
-
-@-webkit-keyframes moveBg {
-  0% {
-    background-position: 0% 0%;
-  }
-
-  50% {
-    background-position: 100% 100%;
-  }
-
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-@-moz-keyframes moveBg {
-  0% {
-    background-position: 0% 0%;
-  }
-
-  50% {
-    background-position: 100% 100%;
-  }
-
-  100% {
-    background-position: 0% 0%;
-  }
+  animation: moveBg 20s linear infinite;
 }
 
 @keyframes moveBg {
@@ -105,17 +73,6 @@ body {
 
   100% {
     background-position: 0% 0%;
-  }
-}
-
-
-@keyframes moveBgMobile {
-  0% {
-    background-position: 0% 0%;
-  }
-
-  100% {
-    background-position: 50% 50%;
   }
 }
 
@@ -171,8 +128,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background: url('/images/mainBackground_v2.jpg') fixed;
-    animation: moveBg 20s linear infinite;
+    background: url('/images/mainBackgroundMobile_v2.png') fixed;
   }
 
   .comicsStack {
