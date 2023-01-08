@@ -5,15 +5,51 @@ import AppBarMainMenu from './components/AppBar/AppBarMainMenu';
 import Footer from './components/Footer/Footer';
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 
 // This is the chainId your dApp will work on.
 const activeChainId = ChainId.Goerli;
 
 function MyApp({ Component, pageProps }) {
 
+  const [os, setOs] = useState(null);
+
+
+  /*Need for the background animation depending of device OS*/
+  useEffect(() => {
+    const userAgent = navigator.userAgent;
+    if (userAgent.indexOf('Android') !== -1) {
+      setOs('Android');
+    } else if (userAgent.indexOf('iOS') !== -1) {
+      setOs('iOS');
+      console.log('ios');
+    }
+    console.log(os);
+  }, []);
+
   return (
     <>
-      <div className='text-sm md:text-base'>
+      {os === 'Android' ? <style jsx global>{`
+    @media (max-width: 1024px) {
+        body {
+          background: url('/images/mainBackground_v2.jpg') fixed;
+          animation: moveBg 45s linear infinite;
+        }
+      }
+      `}</style> 
+      :
+      <style jsx global>{`
+    @media (max-width: 1024px) {
+        body {
+          background: url('/images/mainBackground_v2.jpg') fixed;
+          animation: moveBg 300s linear infinite;
+        }
+      }
+      `}</style> 
+      }
+
+
+      <div className='backgr text-sm md:text-base'>
         <AppBarMainMenu />
         <Head>
           <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
@@ -25,6 +61,7 @@ function MyApp({ Component, pageProps }) {
           <meta name="theme-color" content="#ffffff"></meta>
         </Head>
         <ThirdwebProvider desiredChainId={activeChainId}>
+          OS:{os}
           <Component {...pageProps} />
         </ThirdwebProvider >
         <Footer />

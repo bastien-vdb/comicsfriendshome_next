@@ -1,14 +1,13 @@
-import AppBarMainMenu from './components/AppBar/AppBarMainMenu';
 import Partnership from './components/Corpus/Partnership';
 import Team from './components/Corpus/Team';
 import GoConnectWallet from './components/Corpus/GoConnectWallet';
 import AboutComicsFriends from './components/AboutComicsFriends/AboutComicsFriends';
-import Footer from './components/Footer/Footer';
 import Head from 'next/head';
 import Goals from './components/Goals/Goals';
 import Genesis from './components/Genesis/Genesis';
 
 export default function Home() {
+
   return (
     <>
       <Head>
