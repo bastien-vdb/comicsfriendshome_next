@@ -109,11 +109,11 @@ body {
 }
 
 .comicsStack {
-  width: 100%;
+  width: 105%;
   height: 40%;
   position: absolute;
   z-index: -1;
-  top: 10%;
+  top: 300px;
   left: 0;
   transform: rotate(5deg);
   background-image: url('/images/l1_v3.png');
@@ -134,11 +134,11 @@ body {
 }
 
 .comicsStack2 {
-  width: 100%;
+  width: 105%;
   height: 40%;
   position: absolute;
   z-index: -1;
-  top: 50%;
+  top: 600px;
   left: 0;
   transform: rotate(5deg);
   background-image: url('/images/l1_v3.png');
@@ -160,21 +160,23 @@ body {
 
 @media (max-width: 1024px) {
   .comicsStack {
-    top: 30%;
+    /* top: 30%; */
+    transform: rotate(0);
   }
   
   .comicsStack2 {
-    top: 80%;
+    /* top: 80%; */
+    transform: rotate(0);
   }
 }
 
 @media (orientation: landscape) and (max-width: 1024px) {
   .comicsStack {
-    top: 50%;
+    /* top: 50%; */
   }
 
   .comicsStack2 {
-    top: 150%;
+    /* top: 150%; */
   }
 }
 
