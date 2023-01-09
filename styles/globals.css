@@ -120,7 +120,7 @@ body {
   background-repeat: repeat-x;
   animation: moveStack 10s linear infinite;
   animation-iteration-count: infinite;
-  transform-origin: 0 50;
+  transform-origin: 0 0;
 }
 
 @keyframes moveStack {
@@ -145,7 +145,7 @@ body {
   background-repeat: repeat-x;
   animation: moveStack2 10s linear infinite;
   animation-iteration-count: infinite;
-  transform-origin: 0 50;
+  transform-origin: 0 0;
 }
 
 @keyframes moveStack2 {
