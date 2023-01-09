@@ -120,7 +120,7 @@ body {
   background-repeat: repeat-x;
   animation: moveStack 10s linear infinite;
   animation-iteration-count: infinite;
-  transform-origin: 0 0;
+  transform-origin: 0 50;
 }
 
 @keyframes moveStack {
@@ -145,7 +145,7 @@ body {
   background-repeat: repeat-x;
   animation: moveStack2 10s linear infinite;
   animation-iteration-count: infinite;
-  transform-origin: 0 0;
+  transform-origin: 0 50;
 }
 
 @keyframes moveStack2 {
@@ -159,11 +159,6 @@ body {
 }
 
 @media (max-width: 1024px) {
-  /* body {
-    background: url('/images/mainBackground_v2.jpg') fixed;
-    animation: moveBg 20s linear infinite;
-  } */
-
   .comicsStack {
     top: 30%;
   }
