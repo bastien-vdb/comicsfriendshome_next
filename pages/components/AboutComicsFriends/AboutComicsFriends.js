@@ -11,6 +11,7 @@ function AboutComicsFriends(props) {
             </Head>
 
             <main className='relative' id='anchor_About'>
+
                 <div className='comicsStack'></div>
                 <div className='comicsStack2'></div>
 

@@ -5,8 +5,26 @@ import AboutComicsFriends from './components/AboutComicsFriends/AboutComicsFrien
 import Head from 'next/head';
 import Goals from './components/Goals/Goals';
 import Genesis from './components/Genesis/Genesis';
+import { useEffect, useRef } from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+  const videoRef = useRef(null);
+
+  const handleVideoEnded = () => {
+    const nextElement = videoRef.current.nextElementSibling;
+    window.scrollTo({
+      top: nextElement.offsetTop,
+      behavior: 'smooth'
+    });
+  };
 
   return (
     <>
@@ -22,8 +40,19 @@ export default function Home() {
         <meta property="og:url" content="https://comicsfriends.io" />
         <meta property="og:type" content="website" />
       </Head>
+
+      <div ref={videoRef} id='comicsmovdiv' data-aos="zoom-out-down" className='comicsmovdiv relative absolute top-0 border-b-2 border-t-2 border-black shadow'>
+        <video className='comicsmov' autoPlay muted playsInline onEnded={handleVideoEnded}>
+          <source src="/video/comicsmov.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
       <main className='flex flex-col gap-20 sm:gap-40 pt-20'>
-        <AboutComicsFriends />
+
+        <div data-aos="fade-up">
+          <AboutComicsFriends />
+        </div>
         <Goals />
         <Genesis />
         <Partnership />

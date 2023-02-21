@@ -5,12 +5,20 @@ import AppBarMainMenu from './components/AppBar/AppBarMainMenu';
 import Footer from './components/Footer/Footer';
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 // This is the chainId your dApp will work on.
 const activeChainId = ChainId.Goerli;
 
 function MyApp({ Component, pageProps }) {
+
+  const [opacity, setOpacity] = useState(1);
+  const [present, setPresent] = useState(true);
+
+
+
+
+
 
   const [os, setOs] = useState(null);
 
@@ -36,21 +44,23 @@ function MyApp({ Component, pageProps }) {
           animation: moveBg 45s linear infinite;
         }
       }
-      `}</style> 
-      :
-      <style jsx global>{`
+      `}</style>
+        :
+        <style jsx global>{`
     @media (max-width: 1024px) {
         body {
           background: url('/images/mainBackground_v2.jpg') fixed;
           animation: moveBg 300s linear infinite;
         }
       }
-      `}</style> 
+      `}</style>
       }
 
 
       <div className='backgr text-sm md:text-base'>
         <AppBarMainMenu />
+        
+
         <Head>
           <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
@@ -61,7 +71,6 @@ function MyApp({ Component, pageProps }) {
           <meta name="theme-color" content="#ffffff"></meta>
         </Head>
         <ThirdwebProvider desiredChainId={activeChainId}>
-          OS:{os}
           <Component {...pageProps} />
         </ThirdwebProvider >
         <Footer />

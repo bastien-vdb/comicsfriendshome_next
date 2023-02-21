@@ -28,6 +28,8 @@ body {
   margin: 0 auto !important;
   float: none !important;
   font-family: 'Spacegrotesk', sans-serif;
+
+  scroll-behavior: smooth;
 }
 
 a {
@@ -113,7 +115,7 @@ body {
   height: 40%;
   position: absolute;
   z-index: -1;
-  top: 300px;
+  top: 100px;
   left: 0;
   transform: rotate(5deg);
   background-image: url('/images/l1_v3.png');
@@ -138,7 +140,7 @@ body {
   height: 40%;
   position: absolute;
   z-index: -1;
-  top: 600px;
+  top: 400px;
   left: 0;
   transform: rotate(5deg);
   background-image: url('/images/l1_v3.png');
@@ -165,7 +167,7 @@ body {
   }
   
   .comicsStack2 {
-    /* top: 80%; */
+    top: 500px;
     transform: rotate(0);
   }
 }
