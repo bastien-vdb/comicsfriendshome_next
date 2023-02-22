@@ -24,7 +24,7 @@ export default function Home() {
   const [videoOpacity, setVideoOpacity] = useState(1);
   const [videoZindex, setVideoZindex] = useState(30);
 
-  useEffect(() => { document.body.style.overflow = 'hidden'; }, []);
+  // useEffect(() => { document.body.style.overflow = 'hidden'; }, []);
 
   const handleVideoEnded = () => {
     const nextElement = videoRef.current.nextElementSibling;
@@ -61,24 +61,12 @@ export default function Home() {
 
       <main className='flex flex-col gap-20 sm:gap-40 pt-20'>
 
-        <div data-aos="fade-up">
-          <AboutComicsFriends />
-        </div>
-        <div data-aos="fade-up-left">
-          <Goals />
-        </div>
-        <div data-aos="fade-down-right">
-          <Genesis />
-        </div>
-        <div data-aos="fade-up">
-          <Partnership />
-        </div>
-        <div data-aos="fade-up">
-          <Team />
-        </div>
-        <div data-aos="fade-up">
-          <GoConnectWallet />
-        </div>
+        <AboutComicsFriends />
+        <Goals />
+        <Genesis />
+        <Partnership />
+        <Team />
+        <GoConnectWallet />
       </main>
     </>
   )

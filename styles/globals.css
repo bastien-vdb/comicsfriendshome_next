@@ -168,11 +168,13 @@ body {
   .comicsStack {
     /* top: 30%; */
     transform: rotate(0);
+    width: 100%;
   }
   
   .comicsStack2 {
     top: 500px;
     transform: rotate(0);
+    width: 100%;
   }
 }
 
