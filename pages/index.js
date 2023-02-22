@@ -5,7 +5,7 @@ import AboutComicsFriends from './components/AboutComicsFriends/AboutComicsFrien
 import Head from 'next/head';
 import Goals from './components/Goals/Goals';
 import Genesis from './components/Genesis/Genesis';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -16,7 +16,17 @@ export default function Home() {
     AOS.init();
   }, []);
 
+  useEffect(() => {
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    }
+  }, []);
+
   const videoRef = useRef(null);
+  const [videoOpacity, setVideoOpacity] = useState(1);
+  const [videoZindex, setVideoZindex] = useState(30);
+
+  useEffect(() => { document.body.style.overflow = 'hidden'; }, []);
 
   const handleVideoEnded = () => {
     const nextElement = videoRef.current.nextElementSibling;
@@ -24,6 +34,13 @@ export default function Home() {
       top: nextElement.offsetTop,
       behavior: 'smooth'
     });
+    setVideoOpacity(0.7);
+    setVideoZindex(0);
+    document.body.style.overflow = 'auto';
+
+  };
+
+  const handleVideoPlay = () => {
   };
 
   return (
@@ -41,8 +58,8 @@ export default function Home() {
         <meta property="og:type" content="website" />
       </Head>
 
-      <div ref={videoRef} id='comicsmovdiv' data-aos="zoom-out-down" className='comicsmovdiv relative absolute top-0 border-b-2 border-t-2 border-black shadow'>
-        <video className='comicsmov' autoPlay muted playsInline onEnded={handleVideoEnded}>
+      <div ref={videoRef} id='comicsmovdiv' style={{ opacity: videoOpacity, zIndex: videoZindex }} data-aos="zoom-out-down" className='comicsmovdiv relative top-0'>
+        <video className='comicsmov' autoPlay muted playsInline onEnded={handleVideoEnded} onPlay={handleVideoPlay}>
           <source src="/video/comicsmov.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
