@@ -22,21 +22,21 @@ function Genesis(props) {
                     <div className='flex flex-wrap justify-center gap-6'>
                         <div className='flex flex-col items-center gap-10 w-96'>
                             <p className='comicsParagraphe'>The different levels will be ranked by 4 different colors: Black is the least common and red is the most common. Individual cards will have different advantages.</p>
-                            <div className='comicsCard border-2 border-red-500 p-4 rounded-xl'>
+                            <div className='comicsCard border-4 border-red-500 p-4 rounded-xl'>
                                 <Image className='h-[25em]' alt='DC Comics Miracle old book page picture' src='/images/MiracleMister.png' height={500} width={500} />
                             </div>
                         </div>
                         <div className='flex flex-wrap justify-center gap-6 lg:items-center'>
                             <div className='flex flex-col gap-6'>
-                                <div className='comicsCard border-2 border-blue-500 p-4 rounded-xl'>
+                                <div className='comicsCard border-4 border-blue-500 p-4 rounded-xl'>
                                     <Image className='lg:h-[16em]' alt='Comic speech bubbles old book page picture' src='/images/comicsStackGenesis1.png' height={400} width={500} />
                                 </div>
-                                <div className='comicsCard border-2 border-yellow-500 p-4 rounded-xl'>
+                                <div className='comicsCard border-4 border-yellow-500 p-4 rounded-xl'>
                                     <Image className='lg:h-[16em]' alt='Comic speech bubbles old book page picture' src='/images/comicsStackGenesis2.png' height={400} width={500} />
                                 </div>
                             </div>
                             <div className='flex justify-center items-center lg:items-start'>
-                                <div className='comicsCard border-2 border-black p-4 rounded-xl'>
+                                <div className='comicsCard border-4 border-black p-4 rounded-xl'>
                                     <Image className='md:w-[13em] lg:w-[15em]' alt='Comics Sub Mariner old book page picture' src='/images/comicsStackGenesis3.png' height={200} width={500} />
                                 </div>
                             </div>

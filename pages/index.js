@@ -14,9 +14,7 @@ export default function Home() {
 
   useEffect(() => {
     AOS.init();
-  }, []);
 
-  useEffect(() => {
     window.onload = function () {
       window.scrollTo(0, 0);
     }
@@ -37,10 +35,6 @@ export default function Home() {
     setVideoOpacity(0.7);
     setVideoZindex(0);
     document.body.style.overflow = 'auto';
-
-  };
-
-  const handleVideoPlay = () => {
   };
 
   return (
@@ -58,8 +52,8 @@ export default function Home() {
         <meta property="og:type" content="website" />
       </Head>
 
-      <div ref={videoRef} id='comicsmovdiv' style={{ opacity: videoOpacity, zIndex: videoZindex }} data-aos="zoom-out-down" className='comicsmovdiv relative top-0'>
-        <video className='comicsmov' autoPlay muted playsInline onEnded={handleVideoEnded} onPlay={handleVideoPlay}>
+      <div ref={videoRef} style={{ opacity: videoOpacity, zIndex: videoZindex }} data-aos="zoom-out-down" className='comicsmovdiv relative top-0'>
+        <video className='comicsmov' autoPlay muted playsInline onEnded={handleVideoEnded}>
           <source src="/video/comicsmov.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -70,11 +64,21 @@ export default function Home() {
         <div data-aos="fade-up">
           <AboutComicsFriends />
         </div>
-        <Goals />
-        <Genesis />
-        <Partnership />
-        <Team />
-        <GoConnectWallet />
+        <div data-aos="fade-up-left">
+          <Goals />
+        </div>
+        <div data-aos="fade-down-right">
+          <Genesis />
+        </div>
+        <div data-aos="fade-up">
+          <Partnership />
+        </div>
+        <div data-aos="fade-up">
+          <Team />
+        </div>
+        <div data-aos="fade-up">
+          <GoConnectWallet />
+        </div>
       </main>
     </>
   )

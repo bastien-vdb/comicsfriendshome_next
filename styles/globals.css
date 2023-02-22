@@ -111,8 +111,10 @@ body {
 }
 
 .comicsStack {
+  opacity: 0.8;
   width: 105%;
-  height: 40%;
+  height: 20%;
+  background-size: contain;
   position: absolute;
   z-index: -1;
   top: 100px;
@@ -136,11 +138,13 @@ body {
 }
 
 .comicsStack2 {
+  opacity: 0.8;
   width: 105%;
-  height: 40%;
+  height: 20%;
+  background-size: contain;
   position: absolute;
   z-index: -1;
-  top: 400px;
+  top: 300px;
   left: 0;
   transform: rotate(5deg);
   background-image: url('/images/l1_v3.png');

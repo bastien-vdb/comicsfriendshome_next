@@ -67,7 +67,7 @@ const members = [
         url: '/images/members/member5.png'
     },
     {
-        name: 'Jennifer Westjohn',
+        name: 'Eternalstar',
         position: 'DA',
         url: '/images/members/member6.png'
     },
