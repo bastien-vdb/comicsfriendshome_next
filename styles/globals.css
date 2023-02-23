@@ -245,3 +245,14 @@ p {
 .PrivacyAndPolicy a {
   text-decoration: underline;
 }
+
+.comicsmov {
+  object-fit: cover;
+  height:100%;
+}
+
+@media screen and (max-width: 1080px) {
+  .comicsmov {
+    height: 100vh;
+  }
+}

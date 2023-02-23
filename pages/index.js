@@ -24,7 +24,7 @@ export default function Home() {
   const [videoOpacity, setVideoOpacity] = useState(1);
   const [videoZindex, setVideoZindex] = useState(30);
 
-  // useEffect(() => { document.body.style.overflow = 'hidden'; }, []);
+  useEffect(() => { document.body.style.overflow = 'hidden'; }, []);
 
   const handleVideoEnded = () => {
     const nextElement = videoRef.current.nextElementSibling;
