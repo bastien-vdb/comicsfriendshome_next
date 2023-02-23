@@ -178,13 +178,17 @@ body {
   }
 }
 
-@media (orientation: landscape) and (max-width: 1024px) {
+@media (orientation: landscape) and (max-width: 1920px) {
   .comicsStack {
     /* top: 50%; */
+    transform: rotate(0);
+    width: 100%;
   }
 
   .comicsStack2 {
     /* top: 150%; */
+    transform: rotate(0);
+    width: 100%;
   }
 }
 
@@ -254,5 +258,11 @@ p {
 @media screen and (max-width: 1080px) {
   .comicsmov {
     height: 100vh;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1220px) {
+  .comicsmov {
+    height: 100%;
   }
 }
