@@ -21,14 +21,21 @@ export default function Home() {
   }, []);
 
   const videoRef = useRef(null);
+  const videoComponent = useRef(null);
   const [videoOpacity, setVideoOpacity] = useState(1);
   const [videoZindex, setVideoZindex] = useState(30);
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   // useEffect(() => { document.body.style.overflow = 'hidden'; }, []);
+  useEffect(() => {
+    videoComponent.current.addEventListener('play', () => {
+      handleVideoLoaded();
+    });
+  }, []);
 
   const handleVideoLoaded = () => {
     setVideoLoaded(true);
+    console.log('video loaded');
   };
 
   const handleVideoEnded = () => {
@@ -57,9 +64,9 @@ export default function Home() {
         <meta property="og:type" content="website" />
       </Head>
 
-      {videoLoaded && <div className='absolute w-screen z-30 h-screen bg-black text-6xl flex justify-center items-center text-center'>... Please wait ...</div>}
+      {!videoLoaded && <div className='absolute w-screen z-30 h-screen bg-black text-6xl flex justify-center items-center text-center'>... Please wait ...</div>}
       <div ref={videoRef} style={{ opacity: videoOpacity, zIndex: videoZindex }} data-aos="zoom-out-down" className='comicsmovdiv relative top-0 shadow-[#9850b3]'>
-        <video className='comicsmov border-b-2 border-white shadow-lg shadow-[#9850b3]' autoPlay muted playsInline onEnded={handleVideoEnded} onLoadedData={handleVideoLoaded} style={{ filter: 'drop-shadow(0px 200px 40px rgb(16,16,32)' }}>
+        <video ref={videoComponent} className='comicsmov border-b-2 border-white shadow-lg shadow-[#9850b3]' autoPlay muted playsInline onEnded={handleVideoEnded} onLoadedData={handleVideoLoaded} style={{ filter: 'drop-shadow(0px 200px 40px rgb(16,16,32)' }}>
           <source src="/video/comicsmov.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
