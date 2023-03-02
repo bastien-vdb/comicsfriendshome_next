@@ -25,7 +25,7 @@ export default function Home() {
   const [videoZindex, setVideoZindex] = useState(30);
   const [videoLoaded, setVideoLoaded] = useState(false);
 
-  useEffect(() => { document.body.style.overflow = 'hidden'; }, []);
+  // useEffect(() => { document.body.style.overflow = 'hidden'; }, []);
 
   const handleVideoLoaded = () => {
     setVideoLoaded(true);
@@ -39,7 +39,7 @@ export default function Home() {
     });
     setVideoOpacity(0.7);
     setVideoZindex(0);
-    document.body.style.overflow = 'auto';
+    // document.body.style.overflow = 'auto';
   };
 
   return (
@@ -57,9 +57,9 @@ export default function Home() {
         <meta property="og:type" content="website" />
       </Head>
 
-      {!videoLoaded && <div className='absolute w-screen z-30 h-screen bg-black text-6xl flex justify-center items-center text-center'>... Please wait ...</div>}
-      <div ref={videoRef} style={{ opacity: videoOpacity, zIndex: videoZindex }} data-aos="zoom-out-down" className='comicsmovdiv relative top-0'>
-        <video className='comicsmov' autoPlay muted playsInline onEnded={handleVideoEnded} onLoadedData={handleVideoLoaded}>
+      {videoLoaded && <div className='absolute w-screen z-30 h-screen bg-black text-6xl flex justify-center items-center text-center'>... Please wait ...</div>}
+      <div ref={videoRef} style={{ opacity: videoOpacity, zIndex: videoZindex }} data-aos="zoom-out-down" className='comicsmovdiv relative top-0 shadow-[#9850b3]'>
+        <video className='comicsmov border-b-2 border-white shadow-lg shadow-[#9850b3]' autoPlay muted playsInline onEnded={handleVideoEnded} onLoadedData={handleVideoLoaded} style={{ filter: 'drop-shadow(0px 200px 40px rgb(16,16,32)' }}>
           <source src="/video/comicsmov.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
