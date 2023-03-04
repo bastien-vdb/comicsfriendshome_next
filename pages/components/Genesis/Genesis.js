@@ -38,17 +38,45 @@ function Genesis(props) {
                         </div>
                         <div className='flex flex-wrap justify-center gap-6 lg:items-center'>
                             <div className='flex flex-col gap-6'>
-                                <div className='comicsCard border-4 border-blue-500 p-4 rounded-xl'>
-                                    <Image className='lg:h-[16em]' alt='Comic speech bubbles old book page picture' src='/images/comicsStackGenesis1.png' height={400} width={500} />
+
+                                <div class="card">
+                                    <div class="imgBox">
+                                        <div className='comicsCard border-4 border-blue-500 p-4 rounded-xl'>
+                                            <Image className='lg:h-[16em]' alt='Comic speech bubbles old book page picture' src='/images/comicsStackGenesis1.png' height={400} width={500} />
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h2>lorem ipsum dolor</h2>
+                                        <p>dfasjl lk;jds jl;sdaf hjdsfjdsa ghfu j asdfuju ,klpds pe posd ur dhqeryt eyop  ads  oep pfghdm,ntic jrpvcnj dfh eklfnsk r dieu pw ehdg swuewq whr ekkshq pfb v,m ertuk b eu e kwre i t   q m ei er wr efg efbdfeoi  cbxgkr ,rikugh dsk bvckjgry kfbd,vbkugsbn,sdvksghksvb us y bvkur iur jcxgiur kuryt rktry ktrut dsbvskt hrsut strksbfskfgs </p>
+                                    </div>
                                 </div>
-                                <div className='comicsCard border-4 border-yellow-500 p-4 rounded-xl'>
-                                    <Image className='lg:h-[16em]' alt='Comic speech bubbles old book page picture' src='/images/comicsStackGenesis2.png' height={400} width={500} />
+
+                                <div class="card">
+                                    <div class="imgBox">
+                                        <div className='comicsCard border-4 border-yellow-500 p-4 rounded-xl'>
+                                            <Image className='lg:h-[16em]' alt='Comic speech bubbles old book page picture' src='/images/comicsStackGenesis2.png' height={400} width={500} />
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h2>lorem ipsum dolor</h2>
+                                        <p>dfasjl lk;jds jl;sdaf hjdsfjdsa ghfu j asdfuju ,klpds pe posd ur dhqeryt eyop  ads  oep pfghdm,ntic jrpvcnj dfh eklfnsk r dieu pw ehdg swuewq whr ekkshq pfb v,m ertuk b eu e kwre i t   q m ei er wr efg efbdfeoi  cbxgkr ,rikugh dsk bvckjgry kfbd,vbkugsbn,sdvksghksvb us y bvkur iur jcxgiur kuryt rktry ktrut dsbvskt hrsut strksbfskfgs </p>
+                                    </div>
                                 </div>
                             </div>
                             <div className='flex justify-center items-center lg:items-start'>
-                                <div className='comicsCard border-4 border-black p-4 rounded-xl'>
-                                    <Image className='md:w-[13em] lg:w-[15em]' alt='Comics Sub Mariner old book page picture' src='/images/comicsStackGenesis3.png' height={200} width={500} />
+
+                                <div class="card">
+                                    <div class="imgBox">
+                                        <div className='comicsCard border-4 border-black p-4 rounded-xl'>
+                                            <Image className='md:w-[13em] lg:w-[15em]' alt='Comics Sub Mariner old book page picture' src='/images/comicsStackGenesis3.png' height={200} width={500} />
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <h2>lorem ipsum dolor</h2>
+                                        <p>dfasjl lk;jds jl;sdaf hjdsfjdsa ghfu j asdfuju ,klpds pe posd ur dhqeryt eyop  ads  oep pfghdm,ntic jrpvcnj dfh eklfnsk r dieu pw ehdg swuewq whr ekkshq pfb v,m ertuk b eu e kwre i t   q m ei er wr efg efbdfeoi  cbxgkr ,rikugh dsk bvckjgry kfbd,vbkugsbn,sdvksghksvb us y bvkur iur jcxgiur kuryt rktry ktrut dsbvskt hrsut strksbfskfgs </p>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
