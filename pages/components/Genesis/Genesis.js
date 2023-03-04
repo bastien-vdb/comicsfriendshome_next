@@ -31,7 +31,7 @@ function Genesis(props) {
                                 </div>
                                 <div class="details">
                                     <h2>lorem ipsum dolor</h2>
-                                    <p>dfasjl lk;jds jl;sdaf hjdsfjdsa ghfu j asdfuju ,klpds pe posd ur dhqeryt eyop  ads  oep pfghdm,ntic jrpvcnj dfh eklfnsk r dieu pw ehdg swuewq whr ekkshq pfb v,m ertuk b eu e kwre i t   q m ei er wr efg efbdfeoi  cbxgkr ,rikugh dsk bvckjgry kfbd,vbkugsbn,sdvksghksvb us y bvkur iur jcxgiur kuryt rktry ktrut dsbvskt hrsut strksbfskfgs </p>
+                                    <p>Rarity specific for this </p>
                                 </div>
                             </div>
 
@@ -47,7 +47,7 @@ function Genesis(props) {
                                     </div>
                                     <div class="details">
                                         <h2>lorem ipsum dolor</h2>
-                                        <p>dfasjl lk;jds jl;sdaf hjdsfjdsa ghfu j asdfuju ,klpds pe posd ur dhqeryt eyop  ads  oep pfghdm,ntic jrpvcnj dfh eklfnsk r dieu pw ehdg swuewq whr ekkshq pfb v,m ertuk b eu e kwre i t   q m ei er wr efg efbdfeoi  cbxgkr ,rikugh dsk bvckjgry kfbd,vbkugsbn,sdvksghksvb us y bvkur iur jcxgiur kuryt rktry ktrut dsbvskt hrsut strksbfskfgs </p>
+                                        <p>Rarity specific for this </p>
                                     </div>
                                 </div>
 
@@ -59,7 +59,7 @@ function Genesis(props) {
                                     </div>
                                     <div class="details">
                                         <h2>lorem ipsum dolor</h2>
-                                        <p>dfasjl lk;jds jl;sdaf hjdsfjdsa ghfu j asdfuju ,klpds pe posd ur dhqeryt eyop  ads  oep pfghdm,ntic jrpvcnj dfh eklfnsk r dieu pw ehdg swuewq whr ekkshq pfb v,m ertuk b eu e kwre i t   q m ei er wr efg efbdfeoi  cbxgkr ,rikugh dsk bvckjgry kfbd,vbkugsbn,sdvksghksvb us y bvkur iur jcxgiur kuryt rktry ktrut dsbvskt hrsut strksbfskfgs </p>
+                                        <p>Rarity specific for this </p>
                                     </div>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@ function Genesis(props) {
                                     </div>
                                     <div class="details">
                                         <h2>lorem ipsum dolor</h2>
-                                        <p>dfasjl lk;jds jl;sdaf hjdsfjdsa ghfu j asdfuju ,klpds pe posd ur dhqeryt eyop  ads  oep pfghdm,ntic jrpvcnj dfh eklfnsk r dieu pw ehdg swuewq whr ekkshq pfb v,m ertuk b eu e kwre i t   q m ei er wr efg efbdfeoi  cbxgkr ,rikugh dsk bvckjgry kfbd,vbkugsbn,sdvksghksvb us y bvkur iur jcxgiur kuryt rktry ktrut dsbvskt hrsut strksbfskfgs </p>
+                                        <p>Rarity specific for this </p>
                                     </div>
                                 </div>
 

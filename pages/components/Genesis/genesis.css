@@ -1,7 +1,7 @@
 .card{
     /* transform:translate(-50%,-50%)perspective(2000px); */
     transform: perspective(2000px);
-    background: rgba(0,0,0,.8);
+    background: rgba(27, 15, 44, 0.5);
     border-radius:20px;
     transform-style:preserve-3d;
     box-shadow:inset 300px 0 50px rgba(0,0,0,.5),0 20px 100px rgba(0,0,0,.5);
@@ -11,6 +11,7 @@
     transform:translate(10%,-10%) perspective(2000px) rotate(-5deg);  
      box-shadow:inset 20px 0 50px rgba(0,0,0,.5),0 10px 100px rgba(0,0,0,.5);
   }
+
   .card:before{
     content:'';
     position:absolute;
