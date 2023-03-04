@@ -167,14 +167,21 @@ body {
 @media (max-width: 1024px) {
   .comicsStack {
     /* top: 30%; */
+    background-size: cover;
     transform: rotate(0);
     width: 100%;
   }
   
   .comicsStack2 {
     top: 500px;
+    background-size: cover;
     transform: rotate(0);
     width: 100%;
+  }
+
+  /*Just for Genesis div because the Genesis div is bigger than other so we add a specific classname and a max-height to it*/
+  .comicsStackGenesis {
+    max-height: 10%;
   }
 }
 

@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import './components/AppBar/AppBarMainMenu.css';
 import './components/AboutComicsFriends/AboutComicsFriends.css';
+import './components/Genesis/genesis.css';
 import AppBarMainMenu from './components/AppBar/AppBarMainMenu';
 import Footer from './components/Footer/Footer';
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
